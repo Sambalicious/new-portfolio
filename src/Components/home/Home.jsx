@@ -5,6 +5,7 @@ import {
   FaStackOverflow,
   FaTwitter,
   FaFacebookSquare,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { FiPhone } from "react-icons/fi";
@@ -25,7 +26,7 @@ const Home = () => {
         <div className={styles.wrapper__left__item}>
           <div className={styles.bio}>
             <img
-              src={desktop}
+              src="https://res.cloudinary.com/dev-sam/image/upload/v1612774969/blue0hxgx4bbyet4jpu0.jpg"
               alt=""
               width="100%"
               style={{ objectFit: "cover", borderRadius: "12px" }}
@@ -103,6 +104,13 @@ const Home = () => {
                 >
                   <FaStackOverflow />
                 </a>
+                <a
+                  href="https://wa.me/2347033098551"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <FaWhatsapp />
+                </a>
               </IconContext.Provider>
             </div>
           </div>
@@ -134,71 +142,74 @@ const Home = () => {
       </div>
 
       <div className={styles.wrapper_right}>
-        <div>
-          <h3 id="tools" className={styles.tools}>
-            Tools
-          </h3>
+        <div className={styles.wrapper__right}>
+          <div>
+            <h3 id="tools" className={styles.tools}>
+              Tools
+            </h3>
 
-          <div className={styles.tools__items}>
-            <h1>HTML</h1>
-            <h1>CSS3</h1>
-            <h1>Javascript</h1>
-            <h1> ReactJS</h1>
-            <h1> NextJS</h1>
-            <h1>MongoDB</h1>
-            <h1> TailwindCSS</h1>
-            <h1> Bootstrap</h1>
-            <h1>Firebase</h1>
-            <h1>RestAPI</h1>
-            <h1>C#</h1>
-            <h1>Github</h1>
-            <h1>Styled-Components</h1>
-            <h1>Netlify</h1>
-            <h1>Vercel</h1>
-            <h1>Heroku</h1>
+            <div className={styles.tools__items}>
+              <h1>HTML</h1>
+              <h1>CSS3</h1>
+              <h1>Javascript</h1>
+              <h1> ReactJS</h1>
+              <h1> NextJS</h1>
+              <h1>MongoDB</h1>
+              <h1> TailwindCSS</h1>
+              <h1> Bootstrap</h1>
+              <h1>Firebase</h1>
+              <h1>RestAPI</h1>
+              <h1>C#</h1>
+              <h1>Github</h1>
+              <h1>Styled-Components</h1>
+              <h1>Netlify</h1>
+              <h1>Vercel</h1>
+              <h1>Heroku</h1>
+            </div>
           </div>
-        </div>
-        <h3 id="projects" className={styles.projects}>
-          Projects
-        </h3>
-        <div className={styles.wrapper__right__item}>
-          <Project
-            tools={"#React, #TailwindCSS , #Imgur API, #Cloudinary API"}
-            img={home}
-            title={"EduGrid"}
-            about={
-              " In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam estdui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
-            }
-          />
-          <Project
-            tools={"#NextJS, #Rest API, #React"}
-            img={home}
-            title={"World Ranks"}
-            about={
-              " A NextJs Application that provides informations about Countries. User can search for countries by Name, Region or Sub Region. User can also toggle between dark and light mode depending on their preference"
-            }
-          />
-          <Project
-            tools={"#Rest API, #React, #PWA, #SCSS"}
-            img={dashboard}
-            title={"Omnibiz Dashboard App"}
-            about={
-              " In this project, I sharpened my NextJs knowledge by building world Countries App while consuming a third party RestAPI.  ."
-            }
-          />
-        </div>
+          <h3 id="projects" className={styles.projects}>
+            Projects
+          </h3>
+          <div className={styles.wrapper__right__item}>
+            <Project
+              tools={"#React, #TailwindCSS , #Imgur API, #Cloudinary API"}
+              img={home}
+              title={"EduGrid"}
+              about={
+                " In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam estdui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
+              }
+            />
+            <Project
+              tools={"#NextJS, #Rest API, #React"}
+              img={home}
+              title={"World Ranks"}
+              about={
+                " A NextJs Application that provides informations about Countries. User can search for countries by Name, Region or Sub Region. User can also toggle between dark and light mode depending on their preference"
+              }
+            />
+            <Project
+              tools={"#Rest API, #React, #PWA, #SCSS"}
+              img={dashboard}
+              title={"Omnibiz Dashboard App"}
+              about={
+                " In this project, I sharpened my NextJs knowledge by building world Countries App while consuming a third party RestAPI.  ."
+              }
+            />
+          </div>
 
-        <Link href="/blogs">
-          <h3 className={styles.blog}>Blogs</h3>
-        </Link>
-        <div className={styles.wrapper__right__item}>
-          {/* <Blog
+          <Link href="/blogs">
+            <h3 className={styles.blog}>Blogs</h3>
+          </Link>
+          <div className={styles.wrapper__right__item}>
+            <h3>Coming Soon...</h3>
+            {/* <Blog
             description={
               " In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
             }
             img={home}
             title={"Introduction to CSS"}
           /> */}
+          </div>
         </div>
       </div>
     </div>

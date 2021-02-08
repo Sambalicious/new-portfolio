@@ -47,9 +47,9 @@ const Layout = ({ children }) => {
       <div>
         <button onClick={switchTheme} className={styles.theme}>
           {theme === "light" ? (
-            <FaMoon color={"#fff"} />
+            <FaMoon size={"2rem"} color={"#fff"} />
           ) : (
-            <FaLightbulb color={"#fff"} />
+            <FaLightbulb size={"2rem"} color={"#fff"} />
           )}
         </button>
 

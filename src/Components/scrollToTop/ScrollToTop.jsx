@@ -29,7 +29,7 @@ const ScrollToTop = () => {
       <FaArrowCircleUp
         className={styles.scrollTop}
         onClick={scrollTop}
-        style={{ height: 40, width: 50, display: showScroll ? "flex" : "none" }}
+        style={{ height: 80, width: 80, display: showScroll ? "flex" : "none" }}
       />
     </>
   );

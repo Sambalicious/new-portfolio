@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
 :root {
   --text-color: #124a63;
   --text-secondary: #b3c5cd;
@@ -43,4 +43,15 @@ a {
   box-sizing: border-box;
   color: inherit;
   font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: 20px;
+  font-weight: 400;
 }
