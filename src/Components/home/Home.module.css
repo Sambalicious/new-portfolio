@@ -55,7 +55,7 @@
 .email,
 .phone {
   color: #828282;
-
+  font-size: 24px;
   cursor: pointer;
   font-weight: 500;
   border-bottom: 1px solid #e0e0e0;
@@ -72,6 +72,8 @@
   margin-top: 40px;
   color: #828282;
   font-weight: 500;
+  font-size: 24px;
+
   padding: 5px 0;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -87,6 +89,8 @@
   color: var(--text-color-secondary);
   border-radius: 12px;
   box-shadow: var(--box-shadow);
+  font-weight: 500;
+  font-size: 24px;
 }
 
 .experience,
@@ -97,7 +101,7 @@
 .bio {
   width: 100%;
 }
-.bio img,
+
 .projects__img img {
   margin-right: 20px;
 }
@@ -112,6 +116,7 @@
 .mute {
   color: #4f4f4f;
   font-weight: 500;
+  font-size: 30px;
 }
 
 .contact__flex {
@@ -123,10 +128,11 @@
 
 .tools__items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   color: #4f4f4f;
   font-weight: 500;
+  font-size: 24px;
   padding: 5px 20px;
 }
 

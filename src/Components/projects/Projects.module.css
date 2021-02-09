@@ -32,6 +32,7 @@
 .mute {
   color: #4f4f4f;
   font-weight: 500;
+  font-size: 24px;
 }
 .projects__img {
   margin-right: 20px;
@@ -89,4 +90,5 @@
 
 .bold {
   font-weight: 700;
+  font-size: 24px;
 }

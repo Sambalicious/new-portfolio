@@ -10,7 +10,7 @@ import {
 import { IconContext } from "react-icons";
 import { FiPhone } from "react-icons/fi";
 import { MdContactMail } from "react-icons/md";
-import desktop from "../../../public/desktop.jpg";
+import git from "../../../public/git.svg";
 import home from "../../../public/home.png";
 import omnibiz from "../../../public/omnibiz.png";
 import dashboard from "../../../public/dashboard.png";
@@ -26,11 +26,10 @@ const Home = () => {
         <div className={styles.wrapper__left__item}>
           <div className={styles.bio}>
             <img
-              src="https://res.cloudinary.com/dev-sam/image/upload/v1612774969/blue0hxgx4bbyet4jpu0.jpg"
+              src={git}
               alt=""
               width="100%"
               style={{ objectFit: "cover", borderRadius: "12px" }}
-              height="600px"
             />
 
             <h3 className={styles.name}>Samuel Ayegbusi</h3>
