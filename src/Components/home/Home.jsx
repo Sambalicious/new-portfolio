@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.wrapper__left}>
-        <div className={styles.wrapper__left__item}>
+        <div className={styles.wrapper__left__item} id="contact">
           <div className={styles.bio}>
             <img
               src={git}
@@ -32,7 +32,7 @@ const Home = () => {
               style={{ objectFit: "cover", borderRadius: "12px" }}
             />
 
-            <h3 className={styles.name}>Samuel Ayegbusi</h3>
+            <h3 className={styles.gradient__text}>Samuel Ayegbusi</h3>
             <p className={styles.stack}>Frontend Developer</p>
           </div>
 

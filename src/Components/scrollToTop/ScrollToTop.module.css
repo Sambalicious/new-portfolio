@@ -11,6 +11,7 @@
   opacity: 0.5;
   color: #2088ff;
   right: 25px;
+  outline: none;
 }
 
 .scrollTop:hover {

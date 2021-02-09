@@ -11,7 +11,7 @@ const Experience = ({ duration, img, company, job, role }) => {
 
         <h5 className={styles.text__700}>{role}</h5>
 
-        <p className={styles.mute}>{company}</p>
+        <p className={styles.company}>{company}</p>
         <p className={styles.exp}>{job}</p>
       </div>
     </div>

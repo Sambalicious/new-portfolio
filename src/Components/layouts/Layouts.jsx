@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
     <div className={styles.container}>
       <Head>
         <title>Samuel Ayegbusi</title>
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="/brand.png" />
       </Head>
       <div>
         <Navbar navbarState={openNavBarState} handleNavbar={handleNavbar} />
@@ -56,8 +56,10 @@ const Layout = ({ children }) => {
         <ScrollToTop />
 
         <footer className={styles.footer}>
-          <div>Made by Sambalicious</div>
-          Copyright &copy; {new Date().getFullYear()}
+          <div>
+            <div>Made by Sambalicious</div>
+            Copyright &copy; {new Date().getFullYear()}
+          </div>
         </footer>
       </div>
     </div>

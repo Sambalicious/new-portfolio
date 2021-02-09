@@ -21,6 +21,18 @@
   padding: 10px 0;
 }
 
+.company {
+  font-weight: 700;
+  font-size: 30px;
+  /* linear-gradient(#40e0d0, #ff8c00, #ff0080); */
+  background: -webkit-linear-gradient(45deg, #f3ec78, #af4261);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+
+  padding: 10px 0;
+}
+
 .text__700 {
   font-weight: 700;
   margin-top: -4px;
