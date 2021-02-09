@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { useSpring, animated } from "react-spring";
-
+import { BsDownload } from "react-icons/bs";
 const CollapseMenu = (props) => {
   const { open } = useSpring({ open: props.navbarState ? 0 : 1 });
 
@@ -34,6 +34,20 @@ const CollapseMenu = (props) => {
               Projects
             </Link>
           </li>
+
+          <li style={{ display: "flex", alignItems: "center" }}>
+            <span style={{ marginRight: "10px" }}>
+              <BsDownload size={"2rem"} />
+            </span>
+
+            <a
+              href="https://drive.google.com/file/d/1MUK1s3-5dOBPK1DV4mytV95m_Pk9bie0/view"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Download Resume
+            </a>
+          </li>
         </NavLinks>
       </CollapseWrapper>
     );
@@ -61,6 +75,7 @@ const NavLinks = styled.ul`
     transition: all 300ms linear 0s;
     padding-bottom: 15px;
   }
+
   & a {
     font-size: 1.4rem;
     line-height: 2;

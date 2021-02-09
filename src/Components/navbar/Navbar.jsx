@@ -5,7 +5,7 @@ import Link from "next/link";
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
-
+import { BsDownload } from "react-icons/bs";
 const Navbar = (props) => {
   const barAnimation = useSpring({
     from: { transform: "translate3d(0, -10rem, 0)" },
@@ -28,6 +28,14 @@ const Navbar = (props) => {
             <Link href="/#contact">Contact</Link>
             <Link href="/#project">Projects</Link>
             <Link href="/#experience">Experience</Link>
+
+            <a
+              href="https://drive.google.com/file/d/1MUK1s3-5dOBPK1DV4mytV95m_Pk9bie0/view"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Resume
+            </a>
           </NavLinks>
           <BurgerWrapper>
             <BurgerMenu

@@ -43,8 +43,8 @@ const Home = () => {
               href="mailto:stemitope370@gmail.com"
             >
               <div className={styles.email}>
-                <div style={{ marginRight: "6px" }}>
-                  <MdContactMail size={"1.2rem"} />
+                <div style={{ margin: "10px 10px 0 0" }}>
+                  <MdContactMail size={"1.4rem"} />
                 </div>
                 <p> stemitope370@gmail.com</p>
               </div>
@@ -54,7 +54,7 @@ const Home = () => {
               onClick={() => (window.location.href = "tel:+2347033098551")}
             >
               {" "}
-              <div style={{ marginRight: "4px" }}>
+              <div style={{ margin: "5px 10px 0 0" }}>
                 <FiPhone />
               </div>
               <p> Tap here to call me</p>
