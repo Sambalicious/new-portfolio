@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
 
         <footer className={styles.footer}>
           <div>
-            <div>Made by Sambalicious</div>
+            <div>Made by Samuel Ayegbusi</div>
             Copyright &copy; {new Date().getFullYear()}
           </div>
         </footer>
