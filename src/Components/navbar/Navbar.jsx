@@ -73,7 +73,7 @@ const FlexContainer = styled.div`
   padding: 1rem 2rem;
   justify-content: space-between;
   height: 5.2rem;
-  border-bottom: 1px solid #e0e0e0;
+  // border-bottom: 1px solid #e0e0e0;
 `;
 
 const NavLinks = styled(animated.ul)`

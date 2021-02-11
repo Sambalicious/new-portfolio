@@ -193,6 +193,7 @@ const Home = () => {
               about={
                 " In this project, I sharpened my NextJs knowledge by building world Countries App while consuming a third party RestAPI.  ."
               }
+              disabled
             />
           </div>
 

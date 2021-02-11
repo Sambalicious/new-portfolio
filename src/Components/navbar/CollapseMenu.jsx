@@ -6,7 +6,7 @@ import { BsDownload } from "react-icons/bs";
 const CollapseMenu = (props) => {
   const { open } = useSpring({ open: props.navbarState ? 0 : 1 });
 
-  if (props.navbarState === true) {
+  if (props.navbarState) {
     return (
       <CollapseWrapper
         style={{
@@ -19,23 +19,20 @@ const CollapseMenu = (props) => {
         }}
       >
         <NavLinks>
-          <li>
-            <Link href="/#contact" onClick={props.handleNavbar}>
-              Contact
-            </Link>
+          <li onClick={props.handleNavbar}>
+            <Link href="/#contact">Contact</Link>
           </li>
-          <li>
-            <Link href="/#experience" onClick={props.handleNavbar}>
-              Experience
-            </Link>
+          <li onClick={props.handleNavbar}>
+            <Link href="/#experience">Experience</Link>
           </li>
-          <li>
-            <Link href="/#projects" onClick={props.handleNavbar}>
-              Projects
-            </Link>
+          <li onClick={props.handleNavbar}>
+            <Link href="/#projects">Projects</Link>
           </li>
 
-          <li style={{ display: "flex", alignItems: "center" }}>
+          <li
+            onClick={props.handleNavbar}
+            style={{ display: "flex", alignItems: "center" }}
+          >
             <span style={{ marginRight: "10px" }}>
               <BsDownload size={"2rem"} />
             </span>

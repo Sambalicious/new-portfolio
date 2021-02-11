@@ -30,7 +30,7 @@
 }
 
 .mute {
-  color: #4f4f4f;
+  color: #828282;
   font-weight: 500;
   font-size: 24px;
 }
@@ -68,7 +68,7 @@
   outline: none;
   background-color: #5c94e1;
   color: #fff;
-  padding: 10px 25px;
+  padding: 15px 25px;
   /* border: 1px solid var(--border-color); */
   border-radius: 12px;
   cursor: pointer;

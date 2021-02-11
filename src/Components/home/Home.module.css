@@ -114,7 +114,7 @@
   }
 }
 .mute {
-  color: #4f4f4f;
+  color: #828282;
   font-weight: 500;
   font-size: 30px;
 }
@@ -130,7 +130,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  color: #4f4f4f;
+  color: #828282;
   font-weight: 500;
   font-size: 24px;
   padding: 5px 20px;
