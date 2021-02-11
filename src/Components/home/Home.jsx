@@ -105,7 +105,7 @@ const Home = () => {
                   <FaStackOverflow />
                 </a>
                 <a
-                  href="https://api.whatsapp.com/send?phone=2347033098551"
+                  href="https://wa.me/2347033098551"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
