@@ -29,6 +29,7 @@ const Home = () => {
               src={git}
               alt=""
               width="100%"
+              height="100%"
               style={{ objectFit: "cover", borderRadius: "12px" }}
             />
 
@@ -104,7 +105,7 @@ const Home = () => {
                   <FaStackOverflow />
                 </a>
                 <a
-                  href="https://wa.me/2347033098551"
+                  href="https://api.whatsapp.com/send?phone=2347033098551"
                   rel="noopener noreferrer"
                   target="_blank"
                 >

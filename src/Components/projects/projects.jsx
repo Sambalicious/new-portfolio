@@ -9,6 +9,7 @@ const Projects = ({ img, tools, about, title, disabled }) => {
           alt="projects"
           style={{ objectFit: "cover" }}
           height="200px"
+          width="100%"
         />
       </div>
       <div>
