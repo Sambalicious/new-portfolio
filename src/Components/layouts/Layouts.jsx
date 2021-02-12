@@ -39,6 +39,11 @@ const Layout = ({ children }) => {
       <Head>
         <title>Samuel Ayegbusi</title>
         <link rel="icon" href="/brand.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <link href="/brand.png" rel="icon" type="image/png" sizes="16x16" />
+        <link href="/brand.png" rel="icon" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-icon.png"></link>
+        <meta name="theme-color" content="#2088ff" />
       </Head>
       <div>
         <Navbar navbarState={openNavBarState} handleNavbar={handleNavbar} />

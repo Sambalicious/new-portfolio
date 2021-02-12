@@ -178,7 +178,7 @@ const Home = () => {
           <div className={styles.wrapper__right__item}>
             <Project
               tools={
-                "#React, #TailwindCSS , #JSON Server,#Github,   #Imgur API, #Cloudinary API"
+                "#React, #TailwindCSS , #JSON Server, #Github, #Imgur API, #Cloudinary API"
               }
               img={edugrid}
               title={"EduGrid"}
@@ -230,9 +230,8 @@ const Home = () => {
             />
           </div>
 
-          <Link href="/blogs">
-            <h3 className={styles.blog}>Blogs</h3>
-          </Link>
+          <h3 className={styles.blog}>Blogs</h3>
+
           <div className={styles.wrapper__right__item}>
             <h3>Coming Soon...</h3>
             {/* <Blog
