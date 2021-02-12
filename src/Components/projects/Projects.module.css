@@ -3,16 +3,6 @@
   border-radius: 12px;
 }
 
-.projects__img {
-  margin-right: 20px;
-}
-
-@media screen and (max-width: 720px) {
-  .projects__img {
-    margin-right: 0px;
-  }
-}
-
 .button__flex {
   display: flex;
   /* width: 70%; */
@@ -34,8 +24,11 @@
   font-weight: 500;
   font-size: 24px;
 }
-.projects__img {
-  margin-right: 20px;
+
+@media (min-width: 900px) {
+  .projects__img {
+    margin-right: 20px;
+  }
 }
 
 .wrapper__right__item__flex__project {
