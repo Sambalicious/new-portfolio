@@ -1,6 +1,6 @@
 import styles from "./Projects.module.css";
 
-const Projects = ({ img, tools, about, title, disabled }) => {
+const Projects = ({ img, tools, about, title, disabled, demo, githubLink }) => {
   return (
     <div className={styles.wrapper__right__item__flex__project}>
       <div className={styles.projects__img}>
@@ -19,7 +19,10 @@ const Projects = ({ img, tools, about, title, disabled }) => {
         <div className={styles.mute}> {about}</div>
 
         <div className={styles.button__flex}>
-          <button
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href={githubLink}
             style={{
               opacity: disabled ? "0.2" : "",
               cursor: disabled ? "not-allowed" : "pointer",
@@ -27,8 +30,10 @@ const Projects = ({ img, tools, about, title, disabled }) => {
             disabled={true}
           >
             Code
-          </button>
-          <button>Demo</button>
+          </a>
+          <a href={demo} rel="noopener noreferrer" target="_blank">
+            Demo
+          </a>
         </div>
       </div>
     </div>

@@ -12,6 +12,9 @@ import { FiPhone } from "react-icons/fi";
 import { MdContactMail } from "react-icons/md";
 import git from "../../../public/git.svg";
 import home from "../../../public/home.png";
+import edugrid from "../../../public/edugrid.png";
+import retail from "../../../public/retail.png";
+import portfolio from "../../../public/portfolio.png";
 import omnibiz from "../../../public/omnibiz.png";
 import dashboard from "../../../public/dashboard.png";
 import vgg from "../../../public/vgg.png";
@@ -62,8 +65,9 @@ const Home = () => {
             </div>
 
             <p className={styles.motivation}>
-              Self-motivated, self-taught developer, who is willing to learn and
-              create outstanding UI applications.
+              Self-motivated, self-taught developer, who loves creating
+              translating User Interface designs of various features into
+              pixel-perfect web pages with awesome user experience.
             </p>
 
             <p>Connect with me</p>
@@ -124,7 +128,7 @@ const Home = () => {
             duration={"September 2020 - Present"}
             company={"Omnibiz Africa"}
             job={
-              " Donec aliquam est dui, vel vestibulum diam sollicitudin id.Quisque feugiat malesuada molestie."
+              "Omnibiz Africa is a one-stop business hub for SMEs across sub-Saharan Africa. The platform empowers businesses with tools that they can use to enhance their reliability, visibility and financial capability. Omnibiz aims to facilitate the growth journey of SMEs on the continent by preparing them for the funding processes of various investment institutions. "
             }
             role={"Frontend Developer"}
           />
@@ -134,7 +138,7 @@ const Home = () => {
             duration={"January 2020 - June 2020"}
             company={"Venture Garden Group"}
             job={
-              " Donec aliquam est dui, vel vestibulum diam sollicitudin id.Quisque feugiat malesuada molestie."
+              "Venture Garden Group (VGG) is a leading provider of innovative, data-driven, end-to-end technology platforms addressing reconciliation and payment processing inefficiencies across multiple sectors of the African economy."
             }
             role={"Frontend Developer (Intern)"}
           />
@@ -151,6 +155,7 @@ const Home = () => {
             <div className={styles.tools__items}>
               <h1>HTML</h1>
               <h1>CSS3</h1>
+              <h1>SCSS</h1>
               <h1>Javascript</h1>
               <h1> ReactJS</h1>
               <h1> NextJS</h1>
@@ -172,29 +177,56 @@ const Home = () => {
           </h3>
           <div className={styles.wrapper__right__item}>
             <Project
-              tools={"#React, #TailwindCSS , #Imgur API, #Cloudinary API"}
-              img={home}
+              tools={
+                "#React, #TailwindCSS , #JSON Server,#Github,   #Imgur API, #Cloudinary API"
+              }
+              img={edugrid}
               title={"EduGrid"}
               about={
-                " In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io. Donec aliquam estdui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
+                "Edugrid is a free online training platform  for teachers by teachers. Interested teachers can sign up to be content creators. It borrows some functionalities from Udemy. Teachers can also sign up to enroll for courses. Its still a work in progress."
               }
+              githubLink={"https://github.com/Sambalicious/learn-It"}
+              demo={"https://edugrid.herokuapp.com"}
             />
             <Project
-              tools={"#NextJS, #Rest API, #React"}
+              tools={"#Rest API, #React, #PWA, #SCSS, #Gitlab"}
+              img={retail}
+              title={"Omnibiz Retail"}
+              about={
+                "Omnibiz Retail is a Software as a service Solution focused on helping retailers get  goods  they sell at the tip of their finger using the app. It provides solution by helping retailers place orders, process payment and also track their goods through the App."
+              }
+              demo={"https://shop.omnibiz.com"}
+              disabled
+            />
+            <Project
+              tools={"#NextJS, #Rest API, #React, #Github"}
               img={home}
               title={"World Ranks"}
               about={
-                " A NextJs Application that provides informations about Countries. User can search for countries by Name, Region or Sub Region. User can also toggle between dark and light mode depending on their preference"
+                " A NextJs Application that provides information about Countries. User can search for countries by Name, Region or Sub Region. User can also toggle between dark and light mode depending on their preference"
               }
+              githubLink={"https://github.com/Sambalicious/Countries"}
+              demo={"https://countries-two.vercel.app/"}
             />
             <Project
-              tools={"#Rest API, #React, #PWA, #SCSS"}
+              tools={"#Rest API, #React, #PWA, #SCSS, #GitLab"}
               img={dashboard}
-              title={"Omnibiz Dashboard App"}
+              title={"Omnibiz Pro"}
               about={
-                " In this project, I sharpened my NextJs knowledge by building world Countries App while consuming a third party RestAPI.  ."
+                "Omnibiz pro is a unified platform to manage all sales channels and customers activities. Core features of this solution include Sales Automation; which empowers the sales force with the right customer data, optimized route plans and an easy to use application to maximize sales orders efficiently, Trade Management; which gives traders and distributors the ease to track sales, manage stock and place orders all on one platform and Online Presence Management which connects all online platforms in one place to effectively publish updates, manage leads, queries and feedback from customers."
               }
+              demo={"https://pro.omnibiz.com"}
               disabled
+            />
+            <Project
+              tools={"#NextJs , #ReactJs, #Styled-Components , #Github,  #CSS"}
+              img={portfolio}
+              title={"Portfolio Website"}
+              about={
+                "My personal website to showcase my skills, tools and articles. The article section is still a work in progress though."
+              }
+              demo={"https://new-portfolio.sambalicious.vercel.app/"}
+              githubLink={"https://github.com/Sambalicious/new-portfolio"}
             />
           </div>
 
