@@ -37,7 +37,7 @@ const Home = () => {
             />
 
             <h3 className={styles.gradient__text}>Samuel Ayegbusi</h3>
-            <p className={styles.stack}>Frontend Developer</p>
+            <h5 className={styles.stack}>Frontend Developer</h5>
           </div>
 
           <div>
@@ -65,9 +65,9 @@ const Home = () => {
             </div>
 
             <p className={styles.motivation}>
-              Self-motivated, self-taught developer, who loves creating
-              translating User Interface designs of various features into
-              pixel-perfect web pages with awesome user experience.
+              Self-motivated, self-taught developer, who loves translating User
+              Interface designs of various features into pixel-perfect web pages
+              with awesome user experience.
             </p>
 
             <p>Connect with me</p>

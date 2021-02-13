@@ -102,15 +102,12 @@
   width: 100%;
 }
 
-.projects__img img {
-  margin-right: 20px;
-}
 .blog {
   cursor: pointer;
 }
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 900px) {
   .projects__img {
-    margin-right: 0px;
+    margin-right: 20px;
   }
 }
 .mute {

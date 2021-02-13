@@ -7,16 +7,16 @@ const Projects = ({ img, tools, about, title, disabled, demo, githubLink }) => {
         <img
           src={img}
           alt="projects"
-          style={{ objectFit: "cover" }}
-          height="200px"
-          width="100%"
+          style={{ objectFit: "cover", width: "100%" }}
+          height="100%"
+          // width="100%"
         />
       </div>
       <div>
         <p className={styles.mute}>{tools}</p>
         <h4 className={styles.bold}>{title}</h4>
 
-        <div className={styles.mute}> {about}</div>
+        <h5 className={styles.mute}> {about}</h5>
 
         <div className={styles.button__flex}>
           <a

@@ -1,5 +1,5 @@
 {
-  "name": "App",
+  "name": "Samuel Ayegbusi",
   "icons": [
     {
       "src": "/android-icon-36x36.png",
@@ -36,13 +36,16 @@
       "sizes": "192x192",
       "type": "image/png",
       "density": "4.0"
+    },
+    {
+      "src": "big.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
 
   "theme_color": "#2196f3",
   "background_color": "#2088ff",
   "display": "standalone",
-  "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/"
+  "start_url": "."
 }
