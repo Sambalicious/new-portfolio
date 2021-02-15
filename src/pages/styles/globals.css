@@ -32,7 +32,7 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   scroll-behavior: smooth;
-  font-display: block;
+  user-select: none;
 }
 
 a {

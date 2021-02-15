@@ -1,37 +1,37 @@
 import styles from "./Projects.module.css";
 
-const Projects = ({ img, tools, about, title, disabled, demo, githubLink }) => {
+const Projects = ({ data }) => {
   return (
     <div className={styles.wrapper__right__item__flex__project}>
       <div className={styles.projects__img}>
         <img
-          src={img}
+          src={data.img}
           alt="projects"
           style={{ objectFit: "cover", width: "100%" }}
           height="100%"
-          // width="100%"
+          width="100%"
         />
       </div>
       <div>
-        <p className={styles.mute}>{tools}</p>
-        <h4 className={styles.bold}>{title}</h4>
+        <p className={styles.mute}>{data.tools}</p>
+        <h4 className={styles.bold}>{data.title}</h4>
 
-        <h5 className={styles.mute}> {about}</h5>
+        <h5 className={styles.mute}> {data.about}</h5>
 
         <div className={styles.button__flex}>
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href={githubLink}
+            href={data.githubLink ? data.githubLink : ""}
             style={{
-              opacity: disabled ? "0.2" : "",
-              cursor: disabled ? "not-allowed" : "pointer",
+              opacity: data.disabled ? "0.2" : "",
+              cursor: data.disabled ? "not-allowed" : "pointer",
             }}
-            disabled={true}
+            disabled={data.disabled}
           >
             Code
           </a>
-          <a href={demo} rel="noopener noreferrer" target="_blank">
+          <a href={data.demo} rel="noopener noreferrer" target="_blank">
             Demo
           </a>
         </div>

@@ -40,6 +40,8 @@
   width: 100%;
   padding: 20px 0;
   margin: 30px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
   border-bottom: 1px solid #e0e0e0;
 }
 

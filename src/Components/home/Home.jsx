@@ -20,9 +20,98 @@ import dashboard from "../../../public/dashboard.png";
 import vgg from "../../../public/vgg.png";
 import Experience from "../experience/Experience";
 import Project from "../projects/projects";
-
 import styles from "./Home.module.css";
 const Home = () => {
+  const projects = [
+    {
+      id: 1,
+      img: edugrid,
+      tools:
+        "#React, #TailwindCSS , #JSON Server, #Github, #Imgur API, #Cloudinary API",
+      title: "Edugrid",
+      about:
+        "Edugrid is a free online training platform  for teachers by teachers. Interested teachers can sign up to be content creators. It borrows some functionalities from Udemy. Teachers can also sign up to enroll for courses. Its still a work in progress.",
+      githubLink: "https://github.com/Sambalicious/learn-It",
+      demo: "https://edugrid.herokuapp.com",
+    },
+    {
+      id: 2,
+      img: retail,
+      tools: "#Rest API, #React, #PWA, #SCSS, #Gitlab",
+      title: "Omnibiz Retail",
+      about:
+        "Omnibiz Retail is a Software as a service Solution focused on helping retailers get  goods  they sell at the tip of their finger using the app. It provides solution by helping retailers place orders, process payment and also track their goods through the App.",
+
+      disabled: true,
+      demo: "https://shop.omnibiz.com",
+    },
+    {
+      id: 3,
+      img: home,
+      tools: "#NextJs , #ReactJs, #Styled-Components , #Github,  #CSS",
+      title: "World Ranks",
+      about:
+        "A NextJs Application that provides information about Countries. User can search for countries by Name, Region or Sub Region. User can also toggle between dark and light mode depending on their preference.",
+      githubLink: "https://github.com/Sambalicious/Countries",
+
+      demo: "https://countries-two.vercel.app/",
+    },
+    {
+      id: 4,
+      img: dashboard,
+      tools: "#Rest API, #React, #PWA, #SCSS, #GitLab",
+      title: "Omnibiz Pro",
+      about:
+        "Omnibiz pro is a unified platform to manage all sales channels and customers activities. Core features of this solution include Sales Automation, optimized route plans and an easy to use application to maximize sales orders efficiently. ",
+
+      demo: "https://pro.omnibiz.com",
+
+      disabled: true,
+    },
+    {
+      id: 5,
+      img: portfolio,
+      tools: "#NextJs , #ReactJs, #Styled-Components , #Github,  #CSS",
+      title: "Portfolio Website",
+      about:
+        "My personal website to showcase my skills, tools and articles. The articles/blogs section is still a work in progress though.",
+
+      demo: "https://new-portfolio.sambalicious.vercel.app/",
+
+      githubLink: "https://github.com/Sambalicious/new-portfolio",
+    },
+  ];
+
+  const experiences = [
+    {
+      id: 1,
+      img: omnibiz,
+      duration: "September 2020 - Present",
+      company: "Omnibiz Africa",
+      job: "Omnibiz Africa is a one-stop business hub for SMEs.",
+      role: "Frontend Developer",
+      achievements: [
+        "Built Custom components with React and SCSS",
+        "Handled complex state management using react hooks and Context API.",
+        " Learnt data caching and client side persistence with Local Forage.",
+        "Worked closely with a senior Dev and learnt new technologies.",
+        "Converted Figma Designs into pixel-perfect web pages. ",
+      ],
+    },
+    {
+      id: 2,
+      img: vgg,
+      duration: "January 2020 - June 2020",
+      company: "Venture Garden Group",
+      job: "Venture Garden Group (VGG) is a leading provider of innovative.",
+      role: "Frontend Developer (Intern)",
+      achievements: [
+        "Converted AdobeXD and Figma design into reusable codes.",
+        "Built React application from scratch.",
+      ],
+    },
+  ];
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.wrapper__left}>
@@ -65,9 +154,9 @@ const Home = () => {
             </div>
 
             <p className={styles.motivation}>
-              Self-motivated, self-taught developer, who loves translating User
-              Interface designs of various features into pixel-perfect web pages
-              with awesome user experience.
+              Self-motivated, self-taught developer, who loves creating
+              translating User Interface designs of various features into
+              pixel-perfect web pages with awesome user experience.
             </p>
 
             <p>Connect with me</p>
@@ -119,115 +208,51 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <div className={styles.tools__container}>
+          <h3 id="tools" className={styles.tools}>
+            Tools
+          </h3>
+
+          <div className={styles.tools__items}>
+            <h1>HTML</h1>
+            <h1>CSS3</h1>
+            <h1>SCSS</h1>
+            <h1>Javascript</h1>
+            <h1> ReactJS</h1>
+            <h1> NextJS</h1>
+            <h1>MongoDB</h1>
+            <h1> TailwindCSS</h1>
+            <h1> Bootstrap</h1>
+            <h1>Firebase</h1>
+            <h1>RestAPI</h1>
+            <h1>C#</h1>
+            <h1>Github</h1>
+            <h1>Styled-Components</h1>
+            <h1>Netlify</h1>
+            <h1>Vercel</h1>
+            <h1>Heroku</h1>
+          </div>
+        </div>
         <h3 id="experience" className={styles.experience}>
           Experiences
         </h3>
         <div className={styles.wrapper__left__item}>
-          <Experience
-            img={omnibiz}
-            duration={"September 2020 - Present"}
-            company={"Omnibiz Africa"}
-            job={
-              "Omnibiz Africa is a one-stop business hub for SMEs across sub-Saharan Africa. The platform empowers businesses with tools that they can use to enhance their reliability, visibility and financial capability. Omnibiz aims to facilitate the growth journey of SMEs on the continent by preparing them for the funding processes of various investment institutions. "
-            }
-            role={"Frontend Developer"}
-          />
-
-          <Experience
-            img={vgg}
-            duration={"January 2020 - June 2020"}
-            company={"Venture Garden Group"}
-            job={
-              "Venture Garden Group (VGG) is a leading provider of innovative, data-driven, end-to-end technology platforms addressing reconciliation and payment processing inefficiencies across multiple sectors of the African economy."
-            }
-            role={"Frontend Developer (Intern)"}
-          />
+          {experiences.map((experience) => (
+            <Experience key={experience.id} data={experience} />
+          ))}
         </div>
       </div>
 
       <div className={styles.wrapper_right}>
         <div className={styles.wrapper__right}>
-          <div>
-            <h3 id="tools" className={styles.tools}>
-              Tools
-            </h3>
-
-            <div className={styles.tools__items}>
-              <h1>HTML</h1>
-              <h1>CSS3</h1>
-              <h1>SCSS</h1>
-              <h1>Javascript</h1>
-              <h1> ReactJS</h1>
-              <h1> NextJS</h1>
-              <h1>MongoDB</h1>
-              <h1> TailwindCSS</h1>
-              <h1> Bootstrap</h1>
-              <h1>Firebase</h1>
-              <h1>RestAPI</h1>
-              <h1>C#</h1>
-              <h1>Github</h1>
-              <h1>Styled-Components</h1>
-              <h1>Netlify</h1>
-              <h1>Vercel</h1>
-              <h1>Heroku</h1>
-            </div>
-          </div>
           <h3 id="projects" className={styles.projects}>
             Projects
           </h3>
           <div className={styles.wrapper__right__item}>
-            <Project
-              tools={
-                "#React, #TailwindCSS , #JSON Server, #Github, #Imgur API, #Cloudinary API"
-              }
-              img={edugrid}
-              title={"EduGrid"}
-              about={
-                "Edugrid is a free online training platform  for teachers by teachers. Interested teachers can sign up to be content creators. It borrows some functionalities from Udemy. Teachers can also sign up to enroll for courses. Its still a work in progress."
-              }
-              githubLink={"https://github.com/Sambalicious/learn-It"}
-              demo={"https://edugrid.herokuapp.com"}
-            />
-            <Project
-              tools={"#Rest API, #React, #PWA, #SCSS, #Gitlab"}
-              img={retail}
-              title={"Omnibiz Retail"}
-              about={
-                "Omnibiz Retail is a Software as a service Solution focused on helping retailers get  goods  they sell at the tip of their finger using the app. It provides solution by helping retailers place orders, process payment and also track their goods through the App."
-              }
-              demo={"https://shop.omnibiz.com"}
-              disabled
-            />
-            <Project
-              tools={"#NextJS, #Rest API, #React, #Github"}
-              img={home}
-              title={"World Ranks"}
-              about={
-                " A NextJs Application that provides information about Countries. User can search for countries by Name, Region or Sub Region. User can also toggle between dark and light mode depending on their preference"
-              }
-              githubLink={"https://github.com/Sambalicious/Countries"}
-              demo={"https://countries-two.vercel.app/"}
-            />
-            <Project
-              tools={"#Rest API, #React, #PWA, #SCSS, #GitLab"}
-              img={dashboard}
-              title={"Omnibiz Pro"}
-              about={
-                "Omnibiz pro is a unified platform to manage all sales channels and customers activities. Core features of this solution include Sales Automation; which empowers the sales force with the right customer data, optimized route plans and an easy to use application to maximize sales orders efficiently, Trade Management; which gives traders and distributors the ease to track sales, manage stock and place orders all on one platform and Online Presence Management which connects all online platforms in one place to effectively publish updates, manage leads, queries and feedback from customers."
-              }
-              demo={"https://pro.omnibiz.com"}
-              disabled
-            />
-            <Project
-              tools={"#NextJs , #ReactJs, #Styled-Components , #Github,  #CSS"}
-              img={portfolio}
-              title={"Portfolio Website"}
-              about={
-                "My personal website to showcase my skills, tools and articles. The article section is still a work in progress though."
-              }
-              demo={"https://new-portfolio.sambalicious.vercel.app/"}
-              githubLink={"https://github.com/Sambalicious/new-portfolio"}
-            />
+            {projects.map((project) => (
+              <Project key={project.id} data={project} />
+            ))}
           </div>
 
           <h3 className={styles.blog}>Blogs</h3>
