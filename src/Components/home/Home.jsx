@@ -13,8 +13,8 @@ import { MdContactMail } from "react-icons/md";
 import git from "../../../public/git.svg";
 import home from "../../../public/home.png";
 import edugrid from "../../../public/edugrid.png";
-import retail from "../../../public/retail.png";
-import portfolio from "../../../public/portfolio.png";
+import shorten from "../../../public/shorten.png";
+import shop from "../../../public/shop.png";
 import omnibiz from "../../../public/omnibiz.png";
 import dashboard from "../../../public/dashboard.png";
 import vgg from "../../../public/vgg.png";
@@ -36,7 +36,7 @@ const Home = () => {
     },
     {
       id: 2,
-      img: retail,
+      img: shop,
       tools: "#Rest API, #React, #PWA, #SCSS, #Gitlab",
       title: "Omnibiz Retail",
       about:
@@ -70,15 +70,16 @@ const Home = () => {
     },
     {
       id: 5,
-      img: portfolio,
-      tools: "#NextJs , #ReactJs, #Styled-Components , #Github,  #CSS",
-      title: "Portfolio Website",
+      img: shorten,
+      tools:
+        "#NextJs , #Typescript, #Styled-Components , #NodeJs,  #Express,  #Postgres SQL,  #Chakra-UI",
+      title: "Shorten",
       about:
-        "My personal website to showcase my skills, tools and articles. The articles/blogs section is still a work in progress though.",
+        "A fullstack application built with postgres SQL, Typescript, NextJs and Chakra UI the converts a long URl to short Url that is easy to remember. ",
 
-      demo: "https://new-portfolio.sambalicious.vercel.app/",
+      demo: "https://shorten-fe.vercel.app",
 
-      githubLink: "https://github.com/Sambalicious/new-portfolio",
+      githubLink: "https://github.com/Sambalicious/shorten-FE",
     },
   ];
 
@@ -96,6 +97,8 @@ const Home = () => {
         " Learnt data caching and client side persistence with Local Forage.",
         "Worked closely with a senior Dev and learnt new technologies.",
         "Converted Figma Designs into pixel-perfect web pages. ",
+        "Integrated backend APIs with the frontend applications",
+        "Involved in  backlog, sprint planning and co-ordinated daily stand up as the scrum master.",
       ],
     },
     {
@@ -108,6 +111,7 @@ const Home = () => {
       achievements: [
         "Converted AdobeXD and Figma design into reusable codes.",
         "Built React application from scratch.",
+        "Integrated backend APIs with the frontend applications",
       ],
     },
   ];

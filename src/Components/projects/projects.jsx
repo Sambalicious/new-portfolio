@@ -1,5 +1,5 @@
 import styles from "./Projects.module.css";
-
+// import Image from "next/image";
 const Projects = ({ data }) => {
   return (
     <div className={styles.wrapper__right__item__flex__project}>
@@ -11,6 +11,8 @@ const Projects = ({ data }) => {
           height="100%"
           width="100%"
         />
+
+        {/* <Image src={data.img} layout="fill" /> */}
       </div>
       <div>
         <p className={styles.mute}>{data.tools}</p>
